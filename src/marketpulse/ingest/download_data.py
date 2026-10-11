@@ -4,10 +4,17 @@ import time
 import urllib.request
 import xml.etree.ElementTree as ET
 import pandas as pd
+import requests
 import yfinance as yf
 from typing import List, Dict, Any
 from marketpulse.storage.mongo_client import MongoStore
 from marketpulse.llm.gemini_client import GeminiSentimentClient
+
+# Cloud IP block/rate-limit bypass karne ke liye fake browser session
+session = requests.Session()
+session.headers.update({
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+})
 
 TICKERS = [
     "RELIANCE.NS", "TCS.NS", "INFY.NS", "HDFCBANK.NS", "ICICIBANK.NS",
@@ -28,7 +35,7 @@ def fetch_historical_daily(tickers: List[str] = TICKERS, period: str = "2y") -> 
 
     for ticker in tickers:
         try:
-            df = yf.download(ticker, period=period, interval="1d", progress=False)
+            df = yf.download(ticker, period=period, interval="1d", progress=False, session=session)
             if df.empty:
                 continue
             
@@ -69,7 +76,7 @@ def fetch_historical_minute(tickers: List[str] = TICKERS, period: str = "5d") ->
 
     for ticker in tickers:
         try:
-            df = yf.download(ticker, period=period, interval="5m", progress=False)
+            df = yf.download(ticker, period=period, interval="5m", progress=False, session=session)
             if df.empty:
                 continue
             
