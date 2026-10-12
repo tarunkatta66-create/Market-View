@@ -1,111 +1,67 @@
-import React, { useState, useEffect } from 'react';
-import Header from './components/Header';
-import TickerBar from './components/TickerBar';
-import StockChart from './components/StockChart';
-import StreamDiagnostics from './components/StreamDiagnostics';
-import CorrelationGraph from './components/CorrelationGraph';
-import PredictionPanel from './components/PredictionPanel';
-import NewsPanel from './components/NewsPanel';
+import React, { useEffect, useState } from "react";
+import TickerBar from "./components/TickerBar";
+import StockChart from "./components/StockChart";
+import NewsPanel from "./components/NewsPanel";
+import PredictionPanel from "./components/PredictionPanel";
+import Header from "./components/Header";
+
+// Helper – builds full endpoint URL (adds trailing slash if missing)
+const apiBase = (() => {
+  const env = import.meta.env.VITE_API_URL || "http://localhost:8000";
+  return env.endsWith("/") ? env.slice(0, -1) : env;
+})();
 
 export default function App() {
+  const [selectedTicker, setSelectedTicker] = useState("RELIANCE.NS");
   const [tickers, setTickers] = useState([]);
-  const [selectedTicker, setSelectedTicker] = useState('RELIANCE');
-  const [priceData, setPriceData] = useState([]);
-  const [timeframe, setTimeframe] = useState('daily');
-  const [streamStats, setStreamStats] = useState(null);
-  const [isLiveConnected, setIsLiveConnected] = useState(false);
+  const [priceSeries, setPriceSeries] = useState([]);
+  const [news, setNews] = useState([]);
 
-  // Load initial tickers
+  // REST calls for initial data
   useEffect(() => {
-    fetch('/api/tickers')
-      .then((res) => res.json())
-      .then((data) => {
-        setTickers(data || []);
-        if (data && data.length > 0) {
-          setSelectedTicker(data[0].ticker);
-        }
-      })
+    fetch(`${apiBase}/api/tickers`)
+      .then((r) => r.json())
+      .then(setTickers)
       .catch(() => setTickers([]));
-  }, []);
 
-  // Load price data when selected ticker or timeframe changes
+    fetch(`${apiBase}/api/prices?ticker=${selectedTicker}`)
+      .then((r) => r.json())
+      .then(setPriceSeries)
+      .catch(() => setPriceSeries([]));
+
+    fetch(`${apiBase}/api/news`)
+      .then((r) => r.json())
+      .then(setNews)
+      .catch(() => setNews([]));
+  }, [selectedTicker]);
+
+  // WebSocket for live price updates
   useEffect(() => {
-    if (!selectedTicker) return;
-
-    const endpoint = timeframe === 'daily'
-      ? `/api/prices/daily/${selectedTicker}`
-      : `/api/prices/minute/${selectedTicker}`;
-
-    fetch(endpoint)
-      .then((res) => res.json())
-      .then((data) => setPriceData(data || []))
-      .catch(() => setPriceData([]));
-  }, [selectedTicker, timeframe]);
-
-  // Load initial stream stats
-  useEffect(() => {
-    fetch('/api/streaming/stats')
-      .then((res) => res.json())
-      .then((data) => setStreamStats(data))
-      .catch(() => setStreamStats(null));
-  }, []);
-
-  // Connect to WebSocket stream endpoint
-  useEffect(() => {
-    const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-    const wsUrl = `${protocol}//${window.location.host}/ws/stream`;
-    const ws = new WebSocket(wsUrl);
-
-    ws.onopen = () => {
-      setIsLiveConnected(true);
-    };
-
+    const ws = new WebSocket(`${apiBase.replace(/^http/, "ws")}/ws/stream`);
     ws.onmessage = (event) => {
-      try {
-        const payload = JSON.parse(event.data);
-        if (payload.stream_stats) {
-          setStreamStats(payload.stream_stats);
-        }
-      } catch (e) {
-        // ignore parse error
-      }
+      const data = JSON.parse(event.data);
+      setPriceSeries((prev) => {
+        const updated = [...prev, data];
+        return updated.length > 200 ? updated.slice(-200) : updated;
+      });
     };
-
-    ws.onclose = () => {
-      setIsLiveConnected(false);
-    };
-
-    return () => {
-      ws.close();
-    };
+    ws.onerror = () => console.error("WebSocket error");
+    return () => ws.close();
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#0B0F17] text-slate-100 flex flex-col font-sans">
-      <Header isLiveConnected={isLiveConnected} />
-      <TickerBar tickers={tickers} selectedTicker={selectedTicker} onSelectTicker={setSelectedTicker} />
-
-      <main className="flex-1 p-4 space-y-4 max-w-7xl w-full mx-auto">
-        <StockChart
-          ticker={selectedTicker}
-          priceData={priceData}
-          timeframe={timeframe}
-          setTimeframe={setTimeframe}
-        />
-
-        <StreamDiagnostics stats={streamStats} />
-
-        <PredictionPanel selectedTicker={selectedTicker} />
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <CorrelationGraph selectedTicker={selectedTicker} onSelectTicker={setSelectedTicker} />
-          <NewsPanel />
-        </div>
+    <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
+      <Header />
+      <main className="container mx-auto p-4 grid gap-4 lg:grid-cols-3">
+        <section className="lg:col-span-1 space-y-4">
+          <TickerBar tickers={tickers} selected={selectedTicker} onSelect={setSelectedTicker} />
+          <NewsPanel news={news} />
+        </section>
+        <section className="lg:col-span-2 space-y-4">
+          <StockChart data={priceSeries} ticker={selectedTicker} />
+          <PredictionPanel selectedTicker={selectedTicker} />
+        </section>
       </main>
-
-      <footer className="border-t border-borderDark bg-[#0F172A] px-4 py-3 text-center text-xs font-mono text-slate-500">
-        MarketPulse CSC702 Course Project &bull; B.E. Computer Engineering &bull; Mumbai University R-2019 C-Scheme
-      </footer>
     </div>
   );
 }
