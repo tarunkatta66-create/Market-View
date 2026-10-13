@@ -1,8 +1,9 @@
 import React from 'react';
 import { Newspaper, ExternalLink, Sparkles } from 'lucide-react';
 
-export default function NewsPanel({ news = [] }) {
+export default function NewsPanel({ news = [], selectedTicker = '' }) {
   const newsList = Array.isArray(news) ? news : [];
+  const tickerLabel = selectedTicker ? selectedTicker.replace('.NS', '') : '';
 
   return (
     <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
@@ -12,7 +13,9 @@ export default function NewsPanel({ news = [] }) {
             <Newspaper className="w-4 h-4" />
           </div>
           <div>
-            <h3 className="text-sm font-bold text-slate-900">Financial News & Sentiment</h3>
+            <h3 className="text-sm font-bold text-slate-900">
+              {tickerLabel ? `${tickerLabel} News & Sentiment` : 'Financial News & Sentiment'}
+            </h3>
             <p className="text-xs text-slate-400">Real-time headlines analyzed with Gemini LLM</p>
           </div>
         </div>

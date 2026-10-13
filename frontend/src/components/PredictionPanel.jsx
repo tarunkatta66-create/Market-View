@@ -20,26 +20,17 @@ export default function PredictionPanel({ selectedTicker = 'RELIANCE', apiBase =
         if (Array.isArray(data) && data.length > 0) {
           setPrediction(data[data.length - 1]);
         } else {
-          setPrediction({
-            ticker: cleanTicker,
-            predicted_direction: 'UP',
-            probability_up: 0.55,
-            date: new Date().toISOString().split('T')[0]
-          });
+          // Backend returned empty — model not yet trained for this ticker
+          setPrediction(null);
         }
       })
       .catch(() => {
-        setPrediction({
-          ticker: cleanTicker,
-          predicted_direction: 'UP',
-          probability_up: 0.54,
-          date: new Date().toISOString().split('T')[0]
-        });
+        setPrediction(null);
       });
   }, [cleanTicker, apiBase]);
 
   const isUp = prediction?.predicted_direction === 'UP';
-  const probUp = Number(prediction?.probability_up ?? 0.52);
+  const probUp = Number(prediction?.probability_up ?? 0);
 
   return (
     <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
@@ -60,27 +51,39 @@ export default function PredictionPanel({ selectedTicker = 'RELIANCE', apiBase =
         <div className="p-4 rounded-xl border border-slate-100 bg-slate-50/60 flex flex-col justify-between">
           <div>
             <span className="text-xs text-slate-500 font-medium block mb-1">Signal for {cleanTicker}</span>
-            <div
-              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold ${
-                isUp ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'
-              }`}
-            >
-              {isUp ? <TrendingUp className="w-4 h-4" /> : <TrendingDown className="w-4 h-4" />}
-              <span>PREDICTED {prediction?.predicted_direction || 'UP'}</span>
-            </div>
+            {prediction ? (
+              <div
+                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold ${
+                  isUp ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'
+                }`}
+              >
+                {isUp ? <TrendingUp className="w-4 h-4" /> : <TrendingDown className="w-4 h-4" />}
+                <span>PREDICTED {prediction.predicted_direction || 'NEUTRAL'}</span>
+              </div>
+            ) : (
+              <span className="text-xs font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-md inline-block">
+                Awaiting Model Inference
+              </span>
+            )}
           </div>
 
           <div className="mt-4 pt-3 border-t border-slate-200/60">
-            <div className="flex justify-between items-center text-xs mb-1">
-              <span className="text-slate-500">Confidence:</span>
-              <span className="font-bold text-slate-800">{(probUp * 100).toFixed(1)}%</span>
-            </div>
-            <div className="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden">
-              <div
-                className={`h-full rounded-full ${isUp ? 'bg-emerald-500' : 'bg-rose-500'}`}
-                style={{ width: `${Math.min(100, Math.max(10, probUp * 100))}%` }}
-              />
-            </div>
+            {prediction ? (
+              <>
+                <div className="flex justify-between items-center text-xs mb-1">
+                  <span className="text-slate-500">Confidence:</span>
+                  <span className="font-bold text-slate-800">{(probUp * 100).toFixed(1)}%</span>
+                </div>
+                <div className="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden">
+                  <div
+                    className={`h-full rounded-full ${isUp ? 'bg-emerald-500' : 'bg-rose-500'}`}
+                    style={{ width: `${Math.min(100, Math.max(10, probUp * 100))}%` }}
+                  />
+                </div>
+              </>
+            ) : (
+              <span className="text-[11px] text-slate-400">Model training or live data required</span>
+            )}
           </div>
         </div>
 

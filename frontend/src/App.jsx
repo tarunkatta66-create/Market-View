@@ -82,10 +82,11 @@ export default function App() {
     };
   }, [selectedTicker, timeframe]);
 
-  // 3. Fetch News feed
+  // 3. Fetch News feed — re-fetch whenever the selected ticker changes
   useEffect(() => {
     let isMounted = true;
-    fetch(`${API_BASE}/api/news`)
+    const cleanSym = selectedTicker.replace(".NS", "");
+    fetch(`${API_BASE}/api/news?ticker=${cleanSym}`)
       .then((res) => {
         if (!res.ok) throw new Error("News fetch failed");
         return res.json();
@@ -103,7 +104,7 @@ export default function App() {
     return () => {
       isMounted = false;
     };
-  }, []);
+  }, [selectedTicker]);
 
   // 4. WebSocket setup for live streaming price feeds
   const setupWebSocket = useCallback(() => {
@@ -228,7 +229,7 @@ export default function App() {
 
           {/* Right Column: Financial News & LLM Sentiment */}
           <div className="lg:col-span-1">
-            <NewsPanel news={news} />
+            <NewsPanel news={news} selectedTicker={selectedTicker} />
           </div>
         </main>
       </div>

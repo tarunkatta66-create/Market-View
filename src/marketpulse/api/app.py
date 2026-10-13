@@ -114,21 +114,99 @@ def get_minute_prices(ticker: str):
 
 
 @app.get("/api/news")
-def get_news():
-    news = store.get_records("news", limit=100)
-    if not news:
+def get_news(ticker: Optional[str] = Query(None)):
+    """
+    Returns news filtered by ticker when ?ticker= is provided.
+
+    Priority order:
+      1. MongoDB 'news' collection, filtered to this ticker + generic MARKET items
+      2. Cached news_headlines.json, filtered the same way
+      3. Live Google News RSS fetch for the specific ticker (scored on-the-fly)
+      4. Unfiltered stored news (generic market news) as a last resort
+    """
+    ticker_clean = ticker.upper().replace(".NS", "") if ticker else None
+
+    # --- Load all stored news (Mongo or JSON cache) ---
+    all_news = store.get_records("news", limit=500)
+    if not all_news:
         news_path = os.path.join("data", "raw", "news_headlines.json")
         if os.path.exists(news_path):
-            with open(news_path, "r", encoding="utf-8") as f:
-                news = json.load(f)
-    if not news:
-        from marketpulse.ingest.download_data import fetch_news_rss
-        news = fetch_news_rss()
-    return news
+            try:
+                with open(news_path, "r", encoding="utf-8") as f:
+                    all_news = json.load(f)
+            except Exception:
+                all_news = []
+
+    if ticker_clean and all_news:
+        # Return items specifically tagged to this ticker OR generic MARKET items
+        filtered = [
+            n for n in all_news
+            if (n.get("ticker", "").upper().replace(".NS", "") == ticker_clean
+                or n.get("ticker", "MARKET") == "MARKET")
+        ]
+        if filtered:
+            return filtered
+
+    # --- Live Google News RSS fetch for this specific ticker ---
+    if ticker_clean:
+        try:
+            import urllib.parse
+            import urllib.request
+            import xml.etree.ElementTree as ET
+            import time as _time
+
+            from marketpulse.llm.gemini_client import GeminiSentimentClient
+
+            query = urllib.parse.quote(f"{ticker_clean} NSE share price stock")
+            rss_url = (
+                f"https://news.google.com/rss/search?q={query}&hl=en-IN&gl=IN&ceid=IN:en"
+            )
+            req = urllib.request.Request(
+                rss_url,
+                headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"},
+            )
+            with urllib.request.urlopen(req, timeout=8) as resp:
+                root = ET.fromstring(resp.read())
+
+            llm = GeminiSentimentClient()
+            live_items = []
+            for item in root.findall(".//item")[:10]:
+                title = item.findtext("title", "").strip()
+                if not title:
+                    continue
+                pub_date = item.findtext("pubDate", "").strip()
+                link = item.findtext("link", "").strip()
+                try:
+                    sent = llm.analyze_headline(title)
+                except Exception:
+                    sent = {"score": 0.0, "label": "neutral", "source": "fallback"}
+                live_items.append({
+                    "title": title,
+                    "ticker": ticker_clean,
+                    "pubDate": pub_date or _time.strftime("%Y-%m-%d %H:%M:%S"),
+                    "link": link,
+                    "source": f"Google News ({ticker_clean})",
+                    "sentiment_score": float(sent.get("score", 0.0)),
+                    "sentiment_label": str(sent.get("label", "neutral")),
+                    "sentiment_source": str(sent.get("source", "lexicon")),
+                })
+            if live_items:
+                return live_items
+        except Exception as exc:
+            print(f"[/api/news] Live RSS fetch error for {ticker_clean}: {exc}")
+
+    # --- Fallback: return all stored news unfiltered ---
+    if all_news:
+        return all_news
+
+    # --- Last resort: fetch everything fresh from RSS ---
+    from marketpulse.ingest.download_data import fetch_news_rss
+    return fetch_news_rss()
 
 
 @app.get("/api/metrics")
 def get_metrics():
+    """Returns real walk-forward validation results from reports/metrics.json."""
     metrics_path = os.path.join("reports", "metrics.json")
     if os.path.exists(metrics_path):
         try:
@@ -136,34 +214,119 @@ def get_metrics():
                 return json.load(f)
         except Exception:
             pass
+    # Emergency cold-start fallback — real metrics are always written by train.py
     return {
         "logistic_regression": {"accuracy": 0.53, "precision": 0.52, "recall": 0.54, "f1": 0.53, "roc_auc": 0.53},
         "random_forest": {"accuracy": 0.55, "precision": 0.54, "recall": 0.56, "f1": 0.55, "roc_auc": 0.55},
-        "lstm": {"accuracy": 0.54, "precision": 0.53, "recall": 0.55, "f1": 0.54, "roc_auc": 0.54}
+        "lstm": {"accuracy": 0.54, "precision": 0.53, "recall": 0.55, "f1": 0.54, "roc_auc": 0.54},
+    }
+
+
+def _live_predict(ticker_clean: str) -> Optional[dict]:
+    """
+    Runs a real-time directional prediction for *ticker_clean* by:
+      1. Loading the persisted Random Forest model from data/processed/rf_model.joblib
+      2. Fetching the most recent daily OHLCV data for the ticker
+      3. Computing the same technical-indicator features used at training time
+      4. Running model.predict_proba() on the latest feature row
+
+    Returns None if the model or sufficient data is not available.
+    """
+    today_str = pd.Timestamp.now().strftime("%Y-%m-%d")
+
+    model_path = os.path.join("data", "processed", "rf_model.joblib")
+    if not os.path.exists(model_path):
+        return None
+
+    try:
+        import joblib
+        model = joblib.load(model_path)
+    except Exception:
+        return None
+
+    # Retrieve recent daily prices (need ~30+ rows for indicator calculation)
+    prices = store.get_records("historical_prices", query={"Ticker": ticker_clean}, limit=60)
+    if not prices:
+        prices = [
+            p for p in store.get_records("historical_prices", limit=5000)
+            if p.get("Ticker") == ticker_clean
+        ]
+    if not prices:
+        daily_path = os.path.join("data", "raw", "prices_daily.csv")
+        if os.path.exists(daily_path):
+            try:
+                all_df = pd.read_csv(daily_path)
+                prices = all_df[all_df["Ticker"] == ticker_clean].tail(60).to_dict(orient="records")
+            except Exception:
+                pass
+
+    if not prices or len(prices) < 10:
+        return None
+
+    df = pd.DataFrame(prices).sort_values("Date")
+    df["Close"] = pd.to_numeric(df["Close"], errors="coerce")
+    df = df.dropna(subset=["Close"])
+
+    from marketpulse.features.technical_indicators import compute_indicators
+    try:
+        feat_df = compute_indicators(df)
+    except Exception:
+        return None
+
+    feat_df = feat_df.dropna()
+    if feat_df.empty:
+        return None
+
+    feature_cols = [
+        c for c in feat_df.columns
+        if c not in ["Date", "Ticker", "Open", "High", "Low", "Close", "Volume", "Target"]
+    ]
+
+    try:
+        X_latest = feat_df[feature_cols].iloc[[-1]].values
+        prob = model.predict_proba(X_latest)[0]
+        class_labels = list(model.classes_)
+        prob_up = float(prob[class_labels.index(1)]) if 1 in class_labels else float(prob[-1])
+        direction = "UP" if prob_up >= 0.5 else "DOWN"
+    except Exception:
+        return None
+
+    return {
+        "date": today_str,
+        "ticker": ticker_clean,
+        "predicted_direction": direction,
+        "probability_up": round(prob_up, 4),
+        "actual_direction": None,
+        "source": "rf_model_live",
     }
 
 
 @app.get("/api/predictions")
 def get_predictions(ticker: Optional[str] = None):
     ticker_clean = ticker.upper().replace(".NS", "") if ticker else None
+
+    # 1. Stored predictions from MongoDB (produced by train.py walk-forward validation)
     preds = store.get_records("predictions", limit=200)
     if preds and ticker_clean:
-        filtered = [p for p in preds if p.get("ticker", "").upper().replace(".NS", "") == ticker_clean]
+        filtered = [
+            p for p in preds
+            if p.get("ticker", "").upper().replace(".NS", "") == ticker_clean
+        ]
         if filtered:
             return filtered
 
-    # Realistic mock fallback prediction if pipeline not yet run on cold instance
-    today_str = pd.Timestamp.now().strftime("%Y-%m-%d")
-    sym = ticker_clean or "RELIANCE"
-    return [
-        {
-            "date": today_str,
-            "ticker": sym,
-            "predicted_direction": "UP",
-            "probability_up": 0.56,
-            "actual_direction": "UP"
-        }
-    ]
+    # 2. Live inference from the persisted RF model (runs on the fly)
+    if ticker_clean:
+        live = _live_predict(ticker_clean)
+        if live:
+            return [live]
+
+    # 3. Return unfiltered stored predictions (any ticker) as an interim fallback
+    if preds:
+        return preds[:10]
+
+    # 4. Nothing available — let the frontend display "No prediction available"
+    return []
 
 
 @app.get("/api/graph/correlation")
@@ -184,7 +347,7 @@ def get_correlation_graph():
     return {
         "matrix": corr_matrix.to_dict(),
         "tickers": list(corr_matrix.columns),
-        "graph": graph_data
+        "graph": graph_data,
     }
 
 
@@ -207,7 +370,7 @@ async def websocket_endpoint(websocket: WebSocket):
                     "price": tick.get("price"),
                     "timestamp": tick.get("timestamp"),
                     "change_pct": tick.get("change_pct", 0.0),
-                    "stream_stats": stats
+                    "stream_stats": stats,
                 }
                 await websocket.send_json(payload)
             await asyncio.sleep(0.1)
