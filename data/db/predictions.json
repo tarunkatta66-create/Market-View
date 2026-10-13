@@ -1,10 +1,4618 @@
 [
   {
+    "date": "2026-06-24",
+    "ticker": "BHARTIARTL",
+    "close": 1877.300048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.496,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-06-24",
+    "ticker": "HDFCBANK",
+    "close": 793.2000122070312,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.465,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-06-24",
+    "ticker": "ICICIBANK",
+    "close": 1373.5999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.41,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-06-24",
+    "ticker": "INFY",
+    "close": 1056.5999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.494,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-06-24",
+    "ticker": "ITC",
+    "close": 290.3500061035156,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.471,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-06-24",
+    "ticker": "RELIANCE",
+    "close": 1313.5999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.481,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-06-24",
+    "ticker": "SBIN",
+    "close": 1034.5999755859375,
+    "predicted_direction": "UP",
+    "probability_up": 0.5,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-06-24",
+    "ticker": "TCS",
+    "close": 2109.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.551,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-06-25",
+    "ticker": "BHARTIARTL",
+    "close": 1850.699951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.515,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-06-25",
+    "ticker": "HDFCBANK",
+    "close": 796.2999877929688,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.449,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-06-25",
+    "ticker": "ICICIBANK",
+    "close": 1387.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.431,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-06-25",
+    "ticker": "INFY",
+    "close": 1041.199951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.491,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-06-25",
+    "ticker": "ITC",
+    "close": 290.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.483,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-06-25",
+    "ticker": "RELIANCE",
+    "close": 1318.0999755859375,
+    "predicted_direction": "UP",
+    "probability_up": 0.512,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-06-25",
+    "ticker": "SBIN",
+    "close": 1045.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.497,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-06-25",
+    "ticker": "TCS",
+    "close": 2094.699951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.519,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-06-29",
+    "ticker": "BHARTIARTL",
+    "close": 1841.0999755859373,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.49,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-06-29",
+    "ticker": "HDFCBANK",
+    "close": 798.9000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.455,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-06-29",
+    "ticker": "ICICIBANK",
+    "close": 1387.5999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.427,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-06-29",
+    "ticker": "INFY",
+    "close": 1036.699951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.444,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-06-29",
+    "ticker": "ITC",
+    "close": 290.70001220703125,
+    "predicted_direction": "UP",
+    "probability_up": 0.518,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-06-29",
+    "ticker": "RELIANCE",
+    "close": 1301.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.538,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-06-29",
+    "ticker": "SBIN",
+    "close": 1036.0999755859375,
+    "predicted_direction": "UP",
+    "probability_up": 0.514,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-06-29",
+    "ticker": "TCS",
+    "close": 2097.89990234375,
+    "predicted_direction": "UP",
+    "probability_up": 0.504,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-06-30",
+    "ticker": "BHARTIARTL",
+    "close": 1852.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.436,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-06-30",
+    "ticker": "HDFCBANK",
+    "close": 797.9500122070312,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.489,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-06-30",
+    "ticker": "ICICIBANK",
+    "close": 1375.199951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.488,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-06-30",
+    "ticker": "INFY",
+    "close": 1000.4000244140624,
+    "predicted_direction": "UP",
+    "probability_up": 0.512,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-06-30",
+    "ticker": "ITC",
+    "close": 286.95001220703125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.492,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-06-30",
+    "ticker": "RELIANCE",
+    "close": 1293.9000244140625,
+    "predicted_direction": "UP",
+    "probability_up": 0.517,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-06-30",
+    "ticker": "SBIN",
+    "close": 1026.9000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.474,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-06-30",
+    "ticker": "TCS",
+    "close": 2031.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.458,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-01",
+    "ticker": "BHARTIARTL",
+    "close": 1871.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.454,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-01",
+    "ticker": "HDFCBANK",
+    "close": 796.1500244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.422,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-01",
+    "ticker": "ICICIBANK",
+    "close": 1379.800048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.394,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-01",
+    "ticker": "INFY",
+    "close": 985.2999877929688,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.45,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-01",
+    "ticker": "ITC",
+    "close": 290.29998779296875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.46,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-01",
+    "ticker": "RELIANCE",
+    "close": 1308.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.479,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-01",
+    "ticker": "SBIN",
+    "close": 1047.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.418,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-01",
+    "ticker": "TCS",
+    "close": 1982.5999755859373,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.459,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-02",
+    "ticker": "BHARTIARTL",
+    "close": 1875.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.488,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-02",
+    "ticker": "HDFCBANK",
+    "close": 795.9000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.492,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-02",
+    "ticker": "ICICIBANK",
+    "close": 1400.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.466,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-02",
+    "ticker": "INFY",
+    "close": 1040.9000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.467,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-02",
+    "ticker": "ITC",
+    "close": 289.8999938964844,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.477,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-02",
+    "ticker": "RELIANCE",
+    "close": 1303.5,
+    "predicted_direction": "UP",
+    "probability_up": 0.512,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-02",
+    "ticker": "SBIN",
+    "close": 1051.5999755859375,
+    "predicted_direction": "UP",
+    "probability_up": 0.502,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-02",
+    "ticker": "TCS",
+    "close": 2068.10009765625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.483,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-03",
+    "ticker": "BHARTIARTL",
+    "close": 1910.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.486,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-03",
+    "ticker": "HDFCBANK",
+    "close": 801.0499877929688,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.489,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-03",
+    "ticker": "ICICIBANK",
+    "close": 1411.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.474,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-03",
+    "ticker": "INFY",
+    "close": 1047.199951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.424,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-03",
+    "ticker": "ITC",
+    "close": 289.95001220703125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.42,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-03",
+    "ticker": "RELIANCE",
+    "close": 1304.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.45,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-03",
+    "ticker": "SBIN",
+    "close": 1040.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.484,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-03",
+    "ticker": "TCS",
+    "close": 2093.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.474,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-06",
+    "ticker": "BHARTIARTL",
+    "close": 1925.699951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.328,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-06",
+    "ticker": "HDFCBANK",
+    "close": 829.8499755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.446,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-06",
+    "ticker": "ICICIBANK",
+    "close": 1426.9000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.43,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-06",
+    "ticker": "INFY",
+    "close": 1042.199951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.418,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-06",
+    "ticker": "ITC",
+    "close": 288.25,
+    "predicted_direction": "UP",
+    "probability_up": 0.509,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-06",
+    "ticker": "RELIANCE",
+    "close": 1321.300048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.514,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-06",
+    "ticker": "SBIN",
+    "close": 1037.699951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.516,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-06",
+    "ticker": "TCS",
+    "close": 2057.60009765625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.455,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "BHARTIARTL",
+    "close": 1925.800048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.464,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "HDFCBANK",
+    "close": 829.2999877929688,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.473,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "ICICIBANK",
+    "close": 1414.699951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.49,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "INFY",
+    "close": 1071.800048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.429,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "ITC",
+    "close": 288.75,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.466,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "RELIANCE",
+    "close": 1308.4000244140625,
+    "predicted_direction": "UP",
+    "probability_up": 0.508,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "SBIN",
+    "close": 1038.0999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.493,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "TCS",
+    "close": 2096.10009765625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.447,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-08",
+    "ticker": "BHARTIARTL",
+    "close": 1888.0999755859373,
+    "predicted_direction": "UP",
+    "probability_up": 0.54,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-08",
+    "ticker": "HDFCBANK",
+    "close": 810.2999877929688,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.379,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-08",
+    "ticker": "ICICIBANK",
+    "close": 1380.5999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.461,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-08",
+    "ticker": "INFY",
+    "close": 1069.300048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.479,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-08",
+    "ticker": "ITC",
+    "close": 280.6499938964844,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.425,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-08",
+    "ticker": "RELIANCE",
+    "close": 1275.9000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.489,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-08",
+    "ticker": "SBIN",
+    "close": 1016.9000244140624,
+    "predicted_direction": "UP",
+    "probability_up": 0.534,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-08",
+    "ticker": "TCS",
+    "close": 2057.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.463,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-09",
+    "ticker": "BHARTIARTL",
+    "close": 1931.0999755859373,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.49,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-09",
+    "ticker": "HDFCBANK",
+    "close": 817.5499877929688,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.47,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-09",
+    "ticker": "ICICIBANK",
+    "close": 1380.699951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.496,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-09",
+    "ticker": "INFY",
+    "close": 1050.800048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.453,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-09",
+    "ticker": "ITC",
+    "close": 282.04998779296875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.454,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-09",
+    "ticker": "RELIANCE",
+    "close": 1279.800048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.543,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-09",
+    "ticker": "SBIN",
+    "close": 1022.0999755859376,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.473,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-09",
+    "ticker": "TCS",
+    "close": 2049.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.428,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-10",
+    "ticker": "BHARTIARTL",
+    "close": 1920.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.485,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-10",
+    "ticker": "HDFCBANK",
+    "close": 824.9500122070312,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.406,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-10",
+    "ticker": "ICICIBANK",
+    "close": 1401.199951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.46,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-10",
+    "ticker": "INFY",
+    "close": 1068.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.499,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-10",
+    "ticker": "ITC",
+    "close": 281.75,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.401,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-10",
+    "ticker": "RELIANCE",
+    "close": 1307.800048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.492,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-10",
+    "ticker": "SBIN",
+    "close": 1036.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.54,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-10",
+    "ticker": "TCS",
+    "close": 2069.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.491,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-13",
+    "ticker": "BHARTIARTL",
+    "close": 1901.800048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.504,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-13",
+    "ticker": "HDFCBANK",
+    "close": 817.9500122070312,
+    "predicted_direction": "UP",
+    "probability_up": 0.529,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-13",
+    "ticker": "ICICIBANK",
+    "close": 1409.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.477,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-13",
+    "ticker": "INFY",
+    "close": 1102.5999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.46,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-13",
+    "ticker": "ITC",
+    "close": 279.6499938964844,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.434,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-13",
+    "ticker": "RELIANCE",
+    "close": 1296.9000244140625,
+    "predicted_direction": "UP",
+    "probability_up": 0.524,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-13",
+    "ticker": "SBIN",
+    "close": 1037.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.48,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-13",
+    "ticker": "TCS",
+    "close": 2181.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.363,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-14",
+    "ticker": "BHARTIARTL",
+    "close": 1936.5,
+    "predicted_direction": "UP",
+    "probability_up": 0.515,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-14",
+    "ticker": "HDFCBANK",
+    "close": 809.4000244140625,
+    "predicted_direction": "UP",
+    "probability_up": 0.5,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-14",
+    "ticker": "ICICIBANK",
+    "close": 1407.699951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.478,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-14",
+    "ticker": "INFY",
+    "close": 1092.9000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.436,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-14",
+    "ticker": "ITC",
+    "close": 275.54998779296875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.484,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-14",
+    "ticker": "RELIANCE",
+    "close": 1293.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.527,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-14",
+    "ticker": "SBIN",
+    "close": 1015.4000244140624,
+    "predicted_direction": "UP",
+    "probability_up": 0.51,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-14",
+    "ticker": "TCS",
+    "close": 2200.60009765625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.478,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-15",
+    "ticker": "BHARTIARTL",
+    "close": 1918.300048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.522,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-15",
+    "ticker": "HDFCBANK",
+    "close": 815.4500122070312,
+    "predicted_direction": "UP",
+    "probability_up": 0.512,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-15",
+    "ticker": "ICICIBANK",
+    "close": 1416.199951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.472,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-15",
+    "ticker": "INFY",
+    "close": 1076.300048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.416,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-15",
+    "ticker": "ITC",
+    "close": 276.6499938964844,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.399,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-15",
+    "ticker": "RELIANCE",
+    "close": 1295.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.497,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-15",
+    "ticker": "SBIN",
+    "close": 1030.0999755859375,
+    "predicted_direction": "UP",
+    "probability_up": 0.557,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-15",
+    "ticker": "TCS",
+    "close": 2189.199951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.335,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-16",
+    "ticker": "BHARTIARTL",
+    "close": 1921.800048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.519,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-16",
+    "ticker": "HDFCBANK",
+    "close": 808.2999877929688,
+    "predicted_direction": "UP",
+    "probability_up": 0.513,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-16",
+    "ticker": "ICICIBANK",
+    "close": 1418.199951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.481,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-16",
+    "ticker": "INFY",
+    "close": 1082.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.474,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-16",
+    "ticker": "ITC",
+    "close": 279.3500061035156,
+    "predicted_direction": "UP",
+    "probability_up": 0.534,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-16",
+    "ticker": "RELIANCE",
+    "close": 1296.5999755859375,
+    "predicted_direction": "UP",
+    "probability_up": 0.527,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-16",
+    "ticker": "SBIN",
+    "close": 1031.199951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.468,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-16",
+    "ticker": "TCS",
+    "close": 2201.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.456,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "BHARTIARTL",
+    "close": 1908.800048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.507,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "HDFCBANK",
+    "close": 819.5999755859375,
+    "predicted_direction": "UP",
+    "probability_up": 0.527,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "ICICIBANK",
+    "close": 1444.300048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.501,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "INFY",
+    "close": 1096.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.444,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "ITC",
+    "close": 280.70001220703125,
+    "predicted_direction": "UP",
+    "probability_up": 0.527,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "RELIANCE",
+    "close": 1327.199951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.524,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "SBIN",
+    "close": 1044.300048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.52,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "TCS",
+    "close": 2269.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.47,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-20",
+    "ticker": "BHARTIARTL",
+    "close": 1940.0999755859373,
+    "predicted_direction": "UP",
+    "probability_up": 0.501,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-20",
+    "ticker": "HDFCBANK",
+    "close": 777.5999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.343,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-20",
+    "ticker": "ICICIBANK",
+    "close": 1460.199951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.501,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-20",
+    "ticker": "INFY",
+    "close": 1087.0999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.391,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-20",
+    "ticker": "ITC",
+    "close": 282.70001220703125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.475,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-20",
+    "ticker": "RELIANCE",
+    "close": 1323.0999755859375,
+    "predicted_direction": "UP",
+    "probability_up": 0.51,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-20",
+    "ticker": "SBIN",
+    "close": 1060.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.515,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-20",
+    "ticker": "TCS",
+    "close": 2251.10009765625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.355,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-21",
+    "ticker": "BHARTIARTL",
+    "close": 1948.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.494,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-21",
+    "ticker": "HDFCBANK",
+    "close": 761.4500122070312,
+    "predicted_direction": "UP",
+    "probability_up": 0.521,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-21",
+    "ticker": "ICICIBANK",
+    "close": 1463.0999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.478,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-21",
+    "ticker": "INFY",
+    "close": 1073.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.411,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-21",
+    "ticker": "ITC",
+    "close": 281.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.497,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-21",
+    "ticker": "RELIANCE",
+    "close": 1303.699951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.56,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-21",
+    "ticker": "SBIN",
+    "close": 1044.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.443,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-21",
+    "ticker": "TCS",
+    "close": 2221.10009765625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.47,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-22",
+    "ticker": "BHARTIARTL",
+    "close": 1949.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.485,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-22",
+    "ticker": "HDFCBANK",
+    "close": 753.1500244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.436,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-22",
+    "ticker": "ICICIBANK",
+    "close": 1440.699951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.449,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-22",
+    "ticker": "INFY",
+    "close": 1052.0999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.455,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-22",
+    "ticker": "ITC",
+    "close": 280.79998779296875,
+    "predicted_direction": "UP",
+    "probability_up": 0.525,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-22",
+    "ticker": "RELIANCE",
+    "close": 1288.5999755859375,
+    "predicted_direction": "UP",
+    "probability_up": 0.555,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-22",
+    "ticker": "SBIN",
+    "close": 1025.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.554,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-22",
+    "ticker": "TCS",
+    "close": 2208.300048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.33,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-23",
+    "ticker": "BHARTIARTL",
+    "close": 1931.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.526,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-23",
+    "ticker": "HDFCBANK",
+    "close": 747.25,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.391,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-23",
+    "ticker": "ICICIBANK",
+    "close": 1434.5999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.482,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-23",
+    "ticker": "INFY",
+    "close": 1047.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.407,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-23",
+    "ticker": "ITC",
+    "close": 281.29998779296875,
+    "predicted_direction": "UP",
+    "probability_up": 0.517,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-23",
+    "ticker": "RELIANCE",
+    "close": 1272.199951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.545,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-23",
+    "ticker": "SBIN",
+    "close": 1012.5999755859376,
+    "predicted_direction": "UP",
+    "probability_up": 0.566,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-23",
+    "ticker": "TCS",
+    "close": 2242.89990234375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.466,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "BHARTIARTL",
+    "close": 1898.199951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.552,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "HDFCBANK",
+    "close": 742.7999877929688,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.432,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "ICICIBANK",
+    "close": 1432.9000244140625,
+    "predicted_direction": "UP",
+    "probability_up": 0.505,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "INFY",
+    "close": 1040.9000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.368,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "ITC",
+    "close": 283.45001220703125,
+    "predicted_direction": "UP",
+    "probability_up": 0.564,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "RELIANCE",
+    "close": 1278.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.544,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "SBIN",
+    "close": 1015.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.518,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "TCS",
+    "close": 2254.300048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.461,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "BHARTIARTL",
+    "close": 1905.300048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.521,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "HDFCBANK",
+    "close": 739.5499877929688,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.368,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "ICICIBANK",
+    "close": 1445.699951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.538,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "INFY",
+    "close": 1079.199951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.51,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "ITC",
+    "close": 285.8500061035156,
+    "predicted_direction": "UP",
+    "probability_up": 0.512,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "RELIANCE",
+    "close": 1280.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.497,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "SBIN",
+    "close": 1020.5999755859376,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.448,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "TCS",
+    "close": 2295.60009765625,
+    "predicted_direction": "UP",
+    "probability_up": 0.523,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-28",
+    "ticker": "BHARTIARTL",
+    "close": 1901.800048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.517,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-28",
+    "ticker": "HDFCBANK",
+    "close": 735.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.36,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-28",
+    "ticker": "ICICIBANK",
+    "close": 1430.800048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.5,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-28",
+    "ticker": "INFY",
+    "close": 1105.699951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.457,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-28",
+    "ticker": "ITC",
+    "close": 284.6499938964844,
+    "predicted_direction": "UP",
+    "probability_up": 0.505,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-28",
+    "ticker": "RELIANCE",
+    "close": 1267.699951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.509,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-28",
+    "ticker": "SBIN",
+    "close": 1013.2000122070312,
+    "predicted_direction": "UP",
+    "probability_up": 0.502,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-28",
+    "ticker": "TCS",
+    "close": 2398.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.508,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-29",
+    "ticker": "BHARTIARTL",
+    "close": 1950.199951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.526,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-29",
+    "ticker": "HDFCBANK",
+    "close": 748.2000122070312,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.402,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-29",
+    "ticker": "ICICIBANK",
+    "close": 1437.9000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.459,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-29",
+    "ticker": "INFY",
+    "close": 1155.5999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.296,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-29",
+    "ticker": "ITC",
+    "close": 286.25,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.499,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-29",
+    "ticker": "RELIANCE",
+    "close": 1275.9000244140625,
+    "predicted_direction": "UP",
+    "probability_up": 0.566,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-29",
+    "ticker": "SBIN",
+    "close": 1013.7000122070312,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.477,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-29",
+    "ticker": "TCS",
+    "close": 2446.60009765625,
+    "predicted_direction": "UP",
+    "probability_up": 0.541,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-30",
+    "ticker": "BHARTIARTL",
+    "close": 1956.800048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.498,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-30",
+    "ticker": "HDFCBANK",
+    "close": 753.9500122070312,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.285,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-30",
+    "ticker": "ICICIBANK",
+    "close": 1433.9000244140625,
+    "predicted_direction": "UP",
+    "probability_up": 0.505,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-30",
+    "ticker": "INFY",
+    "close": 1155.0999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.368,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-30",
+    "ticker": "ITC",
+    "close": 285.04998779296875,
+    "predicted_direction": "UP",
+    "probability_up": 0.507,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-30",
+    "ticker": "RELIANCE",
+    "close": 1292.9000244140625,
+    "predicted_direction": "UP",
+    "probability_up": 0.549,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-30",
+    "ticker": "SBIN",
+    "close": 1025.300048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.557,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-30",
+    "ticker": "TCS",
+    "close": 2431.800048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.492,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-31",
+    "ticker": "BHARTIARTL",
+    "close": 1972.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.487,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-07-31",
+    "ticker": "HDFCBANK",
+    "close": 748.1500244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.406,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-31",
+    "ticker": "ICICIBANK",
+    "close": 1435.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.454,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-31",
+    "ticker": "INFY",
+    "close": 1130.0999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.336,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-31",
+    "ticker": "ITC",
+    "close": 281.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.55,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-31",
+    "ticker": "RELIANCE",
+    "close": 1307.800048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.431,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-31",
+    "ticker": "SBIN",
+    "close": 1027.4000244140625,
+    "predicted_direction": "UP",
+    "probability_up": 0.527,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-07-31",
+    "ticker": "TCS",
+    "close": 2365.60009765625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.422,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-03",
+    "ticker": "BHARTIARTL",
+    "close": 1970.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.429,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-03",
+    "ticker": "HDFCBANK",
+    "close": 753.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.332,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-03",
+    "ticker": "ICICIBANK",
+    "close": 1460.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.518,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-03",
+    "ticker": "INFY",
+    "close": 1180.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.422,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-03",
+    "ticker": "ITC",
+    "close": 287.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.526,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-03",
+    "ticker": "RELIANCE",
+    "close": 1319.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.5,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-03",
+    "ticker": "SBIN",
+    "close": 1045.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.484,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-03",
+    "ticker": "TCS",
+    "close": 2473.699951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.523,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-04",
+    "ticker": "BHARTIARTL",
+    "close": 1970.0999755859373,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.484,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-04",
+    "ticker": "HDFCBANK",
+    "close": 742.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.363,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-04",
+    "ticker": "ICICIBANK",
+    "close": 1454.5999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.477,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-04",
+    "ticker": "INFY",
+    "close": 1167.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.463,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-04",
+    "ticker": "ITC",
+    "close": 289.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.415,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-04",
+    "ticker": "RELIANCE",
+    "close": 1290.9000244140625,
+    "predicted_direction": "UP",
+    "probability_up": 0.528,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-04",
+    "ticker": "SBIN",
+    "close": 1042.699951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.474,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-04",
+    "ticker": "TCS",
+    "close": 2460.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.446,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "BHARTIARTL",
+    "close": 1978.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.493,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "HDFCBANK",
+    "close": 735.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.449,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "ICICIBANK",
+    "close": 1450.0999755859375,
+    "predicted_direction": "UP",
+    "probability_up": 0.508,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "INFY",
+    "close": 1174.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.465,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "ITC",
+    "close": 286.95001220703125,
+    "predicted_direction": "UP",
+    "probability_up": 0.516,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "RELIANCE",
+    "close": 1280.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.521,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "SBIN",
+    "close": 1055.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.496,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "TCS",
+    "close": 2413.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.462,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-06",
+    "ticker": "BHARTIARTL",
+    "close": 1948.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.465,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-06",
+    "ticker": "HDFCBANK",
+    "close": 734.2999877929688,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.466,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-06",
+    "ticker": "ICICIBANK",
+    "close": 1457.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.49,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-06",
+    "ticker": "INFY",
+    "close": 1165.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.433,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-06",
+    "ticker": "ITC",
+    "close": 285.8999938964844,
+    "predicted_direction": "UP",
+    "probability_up": 0.52,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-06",
+    "ticker": "RELIANCE",
+    "close": 1325.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.51,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-06",
+    "ticker": "SBIN",
+    "close": 1085.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.435,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-06",
+    "ticker": "TCS",
+    "close": 2373.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.44,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-07",
+    "ticker": "BHARTIARTL",
+    "close": 1959.9000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.462,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-07",
+    "ticker": "HDFCBANK",
+    "close": 731.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.394,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-07",
+    "ticker": "ICICIBANK",
+    "close": 1421.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.503,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-07",
+    "ticker": "INFY",
+    "close": 1175.0999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.471,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-07",
+    "ticker": "ITC",
+    "close": 286.1000061035156,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.445,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-07",
+    "ticker": "RELIANCE",
+    "close": 1334.800048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.401,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-07",
+    "ticker": "SBIN",
+    "close": 1097.199951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.386,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-07",
+    "ticker": "TCS",
+    "close": 2452.699951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.479,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "BHARTIARTL",
+    "close": 1943.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.507,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "HDFCBANK",
+    "close": 731.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.414,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "ICICIBANK",
+    "close": 1431.800048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.596,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "INFY",
+    "close": 1183.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.484,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "ITC",
+    "close": 282.6499938964844,
+    "predicted_direction": "UP",
+    "probability_up": 0.528,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "RELIANCE",
+    "close": 1327.300048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.505,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "SBIN",
+    "close": 1071.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.422,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "TCS",
+    "close": 2425.699951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.346,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-11",
+    "ticker": "BHARTIARTL",
+    "close": 1915.199951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.547,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-11",
+    "ticker": "HDFCBANK",
+    "close": 729.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.505,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-11",
+    "ticker": "ICICIBANK",
+    "close": 1429.5999755859375,
+    "predicted_direction": "UP",
+    "probability_up": 0.528,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-11",
+    "ticker": "INFY",
+    "close": 1190.699951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.491,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-11",
+    "ticker": "ITC",
+    "close": 279.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.526,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-11",
+    "ticker": "RELIANCE",
+    "close": 1323.9000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.467,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-11",
+    "ticker": "SBIN",
+    "close": 1066.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.454,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-11",
+    "ticker": "TCS",
+    "close": 2445.699951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.381,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-12",
+    "ticker": "BHARTIARTL",
+    "close": 1945.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.551,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-12",
+    "ticker": "HDFCBANK",
+    "close": 729.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.512,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-12",
+    "ticker": "ICICIBANK",
+    "close": 1431.699951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.538,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-12",
+    "ticker": "INFY",
+    "close": 1176.0999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.487,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-12",
+    "ticker": "ITC",
+    "close": 276.1499938964844,
+    "predicted_direction": "UP",
+    "probability_up": 0.514,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-12",
+    "ticker": "RELIANCE",
+    "close": 1329.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.506,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-12",
+    "ticker": "SBIN",
+    "close": 1082.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.488,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-12",
+    "ticker": "TCS",
+    "close": 2349.699951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.404,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "BHARTIARTL",
+    "close": 1939.0999755859373,
+    "predicted_direction": "UP",
+    "probability_up": 0.525,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "HDFCBANK",
+    "close": 725.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.515,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "ICICIBANK",
+    "close": 1406.800048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.498,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "INFY",
+    "close": 1175.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.432,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "ITC",
+    "close": 278.5,
+    "predicted_direction": "UP",
+    "probability_up": 0.538,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "RELIANCE",
+    "close": 1317.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.513,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "SBIN",
+    "close": 1083.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.413,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "TCS",
+    "close": 2375.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.345,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-14",
+    "ticker": "BHARTIARTL",
+    "close": 1992.0999755859373,
+    "predicted_direction": "UP",
+    "probability_up": 0.501,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-14",
+    "ticker": "HDFCBANK",
+    "close": 727.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.572,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-14",
+    "ticker": "ICICIBANK",
+    "close": 1417.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.491,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-14",
+    "ticker": "INFY",
+    "close": 1169.199951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.409,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-14",
+    "ticker": "ITC",
+    "close": 278.20001220703125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.468,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-14",
+    "ticker": "RELIANCE",
+    "close": 1310.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.491,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-14",
+    "ticker": "SBIN",
+    "close": 1067.699951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.477,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-14",
+    "ticker": "TCS",
+    "close": 2361.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.436,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "BHARTIARTL",
+    "close": 1969.300048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.5,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "HDFCBANK",
+    "close": 729.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.51,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "ICICIBANK",
+    "close": 1415.300048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.539,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "INFY",
+    "close": 1139.9000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.391,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "ITC",
+    "close": 273.04998779296875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.492,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "RELIANCE",
+    "close": 1316.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.507,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "SBIN",
+    "close": 1061.199951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.514,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "TCS",
+    "close": 2313.199951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.501,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-18",
+    "ticker": "BHARTIARTL",
+    "close": 1934.199951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.51,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-18",
+    "ticker": "HDFCBANK",
+    "close": 723.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.479,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-18",
+    "ticker": "ICICIBANK",
+    "close": 1412.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.533,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-18",
+    "ticker": "INFY",
+    "close": 1115.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.385,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-18",
+    "ticker": "ITC",
+    "close": 270.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.47,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-18",
+    "ticker": "RELIANCE",
+    "close": 1322.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.492,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-18",
+    "ticker": "SBIN",
+    "close": 1053.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.534,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-18",
+    "ticker": "TCS",
+    "close": 2280.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.497,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-19",
+    "ticker": "BHARTIARTL",
+    "close": 1922.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.553,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-19",
+    "ticker": "HDFCBANK",
+    "close": 720.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.439,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-19",
+    "ticker": "ICICIBANK",
+    "close": 1402.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.505,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-19",
+    "ticker": "INFY",
+    "close": 1119.800048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.474,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-19",
+    "ticker": "ITC",
+    "close": 267.04998779296875,
+    "predicted_direction": "UP",
+    "probability_up": 0.514,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-19",
+    "ticker": "RELIANCE",
+    "close": 1311.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.54,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-19",
+    "ticker": "SBIN",
+    "close": 1048.5999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.495,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-19",
+    "ticker": "TCS",
+    "close": 2289.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.487,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-20",
+    "ticker": "BHARTIARTL",
+    "close": 1941.699951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.514,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-20",
+    "ticker": "HDFCBANK",
+    "close": 725.0499877929688,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.49,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-20",
+    "ticker": "ICICIBANK",
+    "close": 1411.9000244140625,
+    "predicted_direction": "UP",
+    "probability_up": 0.569,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-20",
+    "ticker": "INFY",
+    "close": 1130.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.495,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-20",
+    "ticker": "ITC",
+    "close": 271.6499938964844,
+    "predicted_direction": "UP",
+    "probability_up": 0.541,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-20",
+    "ticker": "RELIANCE",
+    "close": 1313.199951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.523,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-20",
+    "ticker": "SBIN",
+    "close": 1048.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.511,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-20",
+    "ticker": "TCS",
+    "close": 2298.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.484,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-21",
+    "ticker": "BHARTIARTL",
+    "close": 1946.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.46,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-21",
+    "ticker": "HDFCBANK",
+    "close": 726.9500122070312,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.464,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-21",
+    "ticker": "ICICIBANK",
+    "close": 1420.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.461,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-21",
+    "ticker": "INFY",
+    "close": 1121.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.403,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-21",
+    "ticker": "ITC",
+    "close": 269.3999938964844,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.389,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-21",
+    "ticker": "RELIANCE",
+    "close": 1316.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.492,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-21",
+    "ticker": "SBIN",
+    "close": 1048.699951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.523,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-21",
+    "ticker": "TCS",
+    "close": 2302.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.448,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-24",
+    "ticker": "BHARTIARTL",
+    "close": 1935.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.547,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-24",
+    "ticker": "HDFCBANK",
+    "close": 729.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.467,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-24",
+    "ticker": "ICICIBANK",
+    "close": 1415.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.509,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-24",
+    "ticker": "INFY",
+    "close": 1130.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.505,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-24",
+    "ticker": "ITC",
+    "close": 269.70001220703125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.394,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-24",
+    "ticker": "RELIANCE",
+    "close": 1309.800048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.526,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-24",
+    "ticker": "SBIN",
+    "close": 1039.5,
+    "predicted_direction": "UP",
+    "probability_up": 0.517,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-24",
+    "ticker": "TCS",
+    "close": 2284.10009765625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.487,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-25",
+    "ticker": "BHARTIARTL",
+    "close": 1947.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.522,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-25",
+    "ticker": "HDFCBANK",
+    "close": 727.5,
+    "predicted_direction": "UP",
+    "probability_up": 0.512,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-25",
+    "ticker": "ICICIBANK",
+    "close": 1422.699951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.514,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-25",
+    "ticker": "INFY",
+    "close": 1144.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.443,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-25",
+    "ticker": "ITC",
+    "close": 271.3999938964844,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.381,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-25",
+    "ticker": "RELIANCE",
+    "close": 1317.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.512,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-25",
+    "ticker": "SBIN",
+    "close": 1048.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.583,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-25",
+    "ticker": "TCS",
+    "close": 2296.199951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.433,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "BHARTIARTL",
+    "close": 1902.0999755859373,
+    "predicted_direction": "UP",
+    "probability_up": 0.509,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "HDFCBANK",
+    "close": 727.2000122070312,
+    "predicted_direction": "UP",
+    "probability_up": 0.534,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "ICICIBANK",
+    "close": 1430.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.432,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "INFY",
+    "close": 1120.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.504,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "ITC",
+    "close": 270.25,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.386,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "RELIANCE",
+    "close": 1298.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.549,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "SBIN",
+    "close": 1052.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.481,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "TCS",
+    "close": 2270.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.46,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-27",
+    "ticker": "BHARTIARTL",
+    "close": 1878.300048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.496,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-27",
+    "ticker": "HDFCBANK",
+    "close": 711.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.44,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-27",
+    "ticker": "ICICIBANK",
+    "close": 1443.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.514,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-27",
+    "ticker": "INFY",
+    "close": 1110.800048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.483,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-27",
+    "ticker": "ITC",
+    "close": 269.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.413,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-27",
+    "ticker": "RELIANCE",
+    "close": 1282.199951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.445,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-27",
+    "ticker": "SBIN",
+    "close": 1042.9000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.469,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-27",
+    "ticker": "TCS",
+    "close": 2248.39990234375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.409,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-28",
+    "ticker": "BHARTIARTL",
+    "close": 1882.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.465,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-28",
+    "ticker": "HDFCBANK",
+    "close": 720.2999877929688,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.497,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-28",
+    "ticker": "ICICIBANK",
+    "close": 1422.800048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.562,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-28",
+    "ticker": "INFY",
+    "close": 1144.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.482,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-28",
+    "ticker": "ITC",
+    "close": 266.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.434,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-28",
+    "ticker": "RELIANCE",
+    "close": 1287.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.466,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-28",
+    "ticker": "SBIN",
+    "close": 1047.5,
+    "predicted_direction": "UP",
+    "probability_up": 0.54,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-28",
+    "ticker": "TCS",
+    "close": 2342.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.434,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-31",
+    "ticker": "BHARTIARTL",
+    "close": 1811.9000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.455,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-31",
+    "ticker": "HDFCBANK",
+    "close": 709.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.458,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-31",
+    "ticker": "ICICIBANK",
+    "close": 1454.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.476,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-31",
+    "ticker": "INFY",
+    "close": 1133.800048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.554,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-31",
+    "ticker": "ITC",
+    "close": 255.5,
+    "predicted_direction": "UP",
+    "probability_up": 0.573,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-31",
+    "ticker": "RELIANCE",
+    "close": 1277.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.419,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-08-31",
+    "ticker": "SBIN",
+    "close": 1060.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.55,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-08-31",
+    "ticker": "TCS",
+    "close": 2399.300048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.443,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-01",
+    "ticker": "BHARTIARTL",
+    "close": 1877.199951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.5,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-01",
+    "ticker": "HDFCBANK",
+    "close": 711.9000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.465,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-01",
+    "ticker": "ICICIBANK",
+    "close": 1438.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.48,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-01",
+    "ticker": "INFY",
+    "close": 1156.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.525,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-01",
+    "ticker": "ITC",
+    "close": 266.6000061035156,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.486,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-01",
+    "ticker": "RELIANCE",
+    "close": 1309.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.48,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-01",
+    "ticker": "SBIN",
+    "close": 1034.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.382,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-01",
+    "ticker": "TCS",
+    "close": 2369.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.468,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "BHARTIARTL",
+    "close": 1862.800048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.473,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "HDFCBANK",
+    "close": 700.7999877929688,
+    "predicted_direction": "UP",
+    "probability_up": 0.524,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "ICICIBANK",
+    "close": 1426.5,
+    "predicted_direction": "UP",
+    "probability_up": 0.521,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "INFY",
+    "close": 1140.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.484,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "ITC",
+    "close": 266.29998779296875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.447,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "RELIANCE",
+    "close": 1313.0999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.497,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "SBIN",
+    "close": 1020.9000244140624,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.451,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "TCS",
+    "close": 2348.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.435,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-03",
+    "ticker": "BHARTIARTL",
+    "close": 1869.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.479,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-03",
+    "ticker": "HDFCBANK",
+    "close": 706.6500244140625,
+    "predicted_direction": "UP",
+    "probability_up": 0.593,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-03",
+    "ticker": "ICICIBANK",
+    "close": 1430.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.518,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-03",
+    "ticker": "INFY",
+    "close": 1130.300048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.472,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-03",
+    "ticker": "ITC",
+    "close": 263.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.466,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-03",
+    "ticker": "RELIANCE",
+    "close": 1302.5,
+    "predicted_direction": "UP",
+    "probability_up": 0.502,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-03",
+    "ticker": "SBIN",
+    "close": 1023.4000244140624,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.391,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-03",
+    "ticker": "TCS",
+    "close": 2320.10009765625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.489,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "BHARTIARTL",
+    "close": 1840.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.439,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "HDFCBANK",
+    "close": 712.0999755859375,
+    "predicted_direction": "UP",
+    "probability_up": 0.527,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "ICICIBANK",
+    "close": 1423.199951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.477,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "INFY",
+    "close": 1130.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.521,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "ITC",
+    "close": 264.1000061035156,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.492,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "RELIANCE",
+    "close": 1322.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.505,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "SBIN",
+    "close": 1016.0999755859376,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.475,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "TCS",
+    "close": 2304.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.447,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-07",
+    "ticker": "BHARTIARTL",
+    "close": 1854.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.459,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-07",
+    "ticker": "HDFCBANK",
+    "close": 710.5,
+    "predicted_direction": "UP",
+    "probability_up": 0.525,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-07",
+    "ticker": "ICICIBANK",
+    "close": 1427.5,
+    "predicted_direction": "UP",
+    "probability_up": 0.509,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-07",
+    "ticker": "INFY",
+    "close": 1087.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.402,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-07",
+    "ticker": "ITC",
+    "close": 263.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.462,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-07",
+    "ticker": "RELIANCE",
+    "close": 1309.5,
+    "predicted_direction": "UP",
+    "probability_up": 0.511,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-07",
+    "ticker": "SBIN",
+    "close": 1005.9000244140624,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.415,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-07",
+    "ticker": "TCS",
+    "close": 2270.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.48,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-08",
+    "ticker": "BHARTIARTL",
+    "close": 1844.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.486,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-08",
+    "ticker": "HDFCBANK",
+    "close": 703.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.529,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-08",
+    "ticker": "ICICIBANK",
+    "close": 1399.4000244140625,
+    "predicted_direction": "UP",
+    "probability_up": 0.524,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-08",
+    "ticker": "INFY",
+    "close": 1082.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.471,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-08",
+    "ticker": "ITC",
+    "close": 263.5,
+    "predicted_direction": "UP",
+    "probability_up": 0.507,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-08",
+    "ticker": "RELIANCE",
+    "close": 1294.9000244140625,
+    "predicted_direction": "UP",
+    "probability_up": 0.537,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-08",
+    "ticker": "SBIN",
+    "close": 1008.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.441,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-08",
+    "ticker": "TCS",
+    "close": 2255.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.458,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-09",
+    "ticker": "BHARTIARTL",
+    "close": 1814.699951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.446,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-09",
+    "ticker": "HDFCBANK",
+    "close": 687.0999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.449,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-09",
+    "ticker": "ICICIBANK",
+    "close": 1389.0999755859375,
+    "predicted_direction": "UP",
+    "probability_up": 0.547,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-09",
+    "ticker": "INFY",
+    "close": 1035.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.461,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-09",
+    "ticker": "ITC",
+    "close": 260.79998779296875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.426,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-09",
+    "ticker": "RELIANCE",
+    "close": 1279.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.56,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-09",
+    "ticker": "SBIN",
+    "close": 1000.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.465,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-09",
+    "ticker": "TCS",
+    "close": 2208.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.453,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-10",
+    "ticker": "BHARTIARTL",
+    "close": 1839.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.533,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-10",
+    "ticker": "HDFCBANK",
+    "close": 693.7999877929688,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.48,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-10",
+    "ticker": "ICICIBANK",
+    "close": 1384.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.495,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-10",
+    "ticker": "INFY",
+    "close": 1036.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.469,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-10",
+    "ticker": "ITC",
+    "close": 259.29998779296875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.447,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-10",
+    "ticker": "RELIANCE",
+    "close": 1274.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.553,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-10",
+    "ticker": "SBIN",
+    "close": 1009.7000122070312,
+    "predicted_direction": "UP",
+    "probability_up": 0.54,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-10",
+    "ticker": "TCS",
+    "close": 2204.10009765625,
+    "predicted_direction": "UP",
+    "probability_up": 0.525,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "BHARTIARTL",
+    "close": 1831.0999755859373,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.495,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "HDFCBANK",
+    "close": 708.25,
+    "predicted_direction": "UP",
+    "probability_up": 0.581,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ICICIBANK",
+    "close": 1379.300048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.447,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "INFY",
+    "close": 1037.699951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.425,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ITC",
+    "close": 259.8500061035156,
+    "predicted_direction": "UP",
+    "probability_up": 0.505,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "RELIANCE",
+    "close": 1257.5,
+    "predicted_direction": "UP",
+    "probability_up": 0.512,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "SBIN",
+    "close": 995.7000122070312,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.485,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "TCS",
+    "close": 2200.800048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.523,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-15",
+    "ticker": "BHARTIARTL",
+    "close": 1830.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.488,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-15",
+    "ticker": "HDFCBANK",
+    "close": 716.5499877929688,
+    "predicted_direction": "UP",
+    "probability_up": 0.541,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-15",
+    "ticker": "ICICIBANK",
+    "close": 1350.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.47,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-15",
+    "ticker": "INFY",
+    "close": 1077.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.464,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-15",
+    "ticker": "ITC",
+    "close": 258.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.452,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-15",
+    "ticker": "RELIANCE",
+    "close": 1235.300048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.459,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-15",
+    "ticker": "SBIN",
+    "close": 968.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.464,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-15",
+    "ticker": "TCS",
+    "close": 2251.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.529,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-16",
+    "ticker": "BHARTIARTL",
+    "close": 1835.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.516,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-16",
+    "ticker": "HDFCBANK",
+    "close": 721.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.368,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-16",
+    "ticker": "ICICIBANK",
+    "close": 1358.800048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.477,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-16",
+    "ticker": "INFY",
+    "close": 1060.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.476,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-16",
+    "ticker": "ITC",
+    "close": 264.1499938964844,
+    "predicted_direction": "UP",
+    "probability_up": 0.503,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-16",
+    "ticker": "RELIANCE",
+    "close": 1240.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.469,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-16",
+    "ticker": "SBIN",
+    "close": 991.4000244140624,
+    "predicted_direction": "UP",
+    "probability_up": 0.512,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-16",
+    "ticker": "TCS",
+    "close": 2188.800048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.462,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-17",
+    "ticker": "BHARTIARTL",
+    "close": 1836.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.497,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-17",
+    "ticker": "HDFCBANK",
+    "close": 713.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.517,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-17",
+    "ticker": "ICICIBANK",
+    "close": 1347.5999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.485,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-17",
+    "ticker": "INFY",
+    "close": 1058.5999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.47,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-17",
+    "ticker": "ITC",
+    "close": 266.20001220703125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.498,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-17",
+    "ticker": "RELIANCE",
+    "close": 1243.9000244140625,
+    "predicted_direction": "UP",
+    "probability_up": 0.507,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-17",
+    "ticker": "SBIN",
+    "close": 988.7000122070312,
+    "predicted_direction": "UP",
+    "probability_up": 0.521,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-17",
+    "ticker": "TCS",
+    "close": 2190.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.487,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "BHARTIARTL",
+    "close": 1893.300048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.51,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "HDFCBANK",
+    "close": 731.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.498,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "ICICIBANK",
+    "close": 1338.9000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.464,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "INFY",
+    "close": 1051.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.316,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "ITC",
+    "close": 262.29998779296875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.485,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "RELIANCE",
+    "close": 1226.4000244140625,
+    "predicted_direction": "UP",
+    "probability_up": 0.512,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "SBIN",
+    "close": 996.2000122070312,
+    "predicted_direction": "UP",
+    "probability_up": 0.539,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "TCS",
+    "close": 2105.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.416,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-21",
+    "ticker": "BHARTIARTL",
+    "close": 1830.199951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.425,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-21",
+    "ticker": "HDFCBANK",
+    "close": 739.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.496,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-21",
+    "ticker": "ICICIBANK",
+    "close": 1345.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.383,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-21",
+    "ticker": "INFY",
+    "close": 1038.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.399,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-21",
+    "ticker": "ITC",
+    "close": 267.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.466,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-21",
+    "ticker": "RELIANCE",
+    "close": 1247.4000244140625,
+    "predicted_direction": "UP",
+    "probability_up": 0.529,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-21",
+    "ticker": "SBIN",
+    "close": 996.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.391,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-21",
+    "ticker": "TCS",
+    "close": 2128.699951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.32,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-22",
+    "ticker": "BHARTIARTL",
+    "close": 1817.199951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.453,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-22",
+    "ticker": "HDFCBANK",
+    "close": 738.5999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.471,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-22",
+    "ticker": "ICICIBANK",
+    "close": 1339.5999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.434,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-22",
+    "ticker": "INFY",
+    "close": 1029.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.434,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-22",
+    "ticker": "ITC",
+    "close": 265.79998779296875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.454,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-22",
+    "ticker": "RELIANCE",
+    "close": 1240.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.405,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-22",
+    "ticker": "SBIN",
+    "close": 987.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.473,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-22",
+    "ticker": "TCS",
+    "close": 2105.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.384,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-23",
+    "ticker": "BHARTIARTL",
+    "close": 1833.199951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.509,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-23",
+    "ticker": "HDFCBANK",
+    "close": 737.25,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.39,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-23",
+    "ticker": "ICICIBANK",
+    "close": 1340.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.393,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-23",
+    "ticker": "INFY",
+    "close": 1020.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.391,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-23",
+    "ticker": "ITC",
+    "close": 270.1499938964844,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.491,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-23",
+    "ticker": "RELIANCE",
+    "close": 1248.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.511,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-23",
+    "ticker": "SBIN",
+    "close": 994.0999755859376,
+    "predicted_direction": "UP",
+    "probability_up": 0.535,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-23",
+    "ticker": "TCS",
+    "close": 2089.60009765625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.403,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-24",
+    "ticker": "BHARTIARTL",
+    "close": 1795.800048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.424,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-24",
+    "ticker": "HDFCBANK",
+    "close": 728.9000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.468,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-24",
+    "ticker": "ICICIBANK",
+    "close": 1334.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.414,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-24",
+    "ticker": "INFY",
+    "close": 1014.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.355,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-24",
+    "ticker": "ITC",
+    "close": 268.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.434,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-24",
+    "ticker": "RELIANCE",
+    "close": 1219.199951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.435,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-24",
+    "ticker": "SBIN",
+    "close": 978.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.483,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-24",
+    "ticker": "TCS",
+    "close": 2087.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.366,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-25",
+    "ticker": "BHARTIARTL",
+    "close": 1785.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.453,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-25",
+    "ticker": "HDFCBANK",
+    "close": 735.5999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.462,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-25",
+    "ticker": "ICICIBANK",
+    "close": 1326.800048828125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.427,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-25",
+    "ticker": "INFY",
+    "close": 1000.2000122070312,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.388,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-25",
+    "ticker": "ITC",
+    "close": 269.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.46,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-25",
+    "ticker": "RELIANCE",
+    "close": 1226.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.391,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-25",
+    "ticker": "SBIN",
+    "close": 983.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.456,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-25",
+    "ticker": "TCS",
+    "close": 2082.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.328,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-28",
+    "ticker": "BHARTIARTL",
+    "close": 1771.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.468,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-28",
+    "ticker": "HDFCBANK",
+    "close": 719.0499877929688,
+    "predicted_direction": "UP",
+    "probability_up": 0.502,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-28",
+    "ticker": "ICICIBANK",
+    "close": 1302.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.446,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-28",
+    "ticker": "INFY",
+    "close": 1003.2000122070312,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.366,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-28",
+    "ticker": "ITC",
+    "close": 265.20001220703125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.434,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-28",
+    "ticker": "RELIANCE",
+    "close": 1197.5999755859375,
+    "predicted_direction": "UP",
+    "probability_up": 0.523,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-28",
+    "ticker": "SBIN",
+    "close": 962.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.493,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-28",
+    "ticker": "TCS",
+    "close": 2070.699951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.458,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-29",
+    "ticker": "BHARTIARTL",
+    "close": 1771.199951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.45,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-29",
+    "ticker": "HDFCBANK",
+    "close": 722.7000122070312,
+    "predicted_direction": "UP",
+    "probability_up": 0.519,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-29",
+    "ticker": "ICICIBANK",
+    "close": 1292.199951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.518,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-29",
+    "ticker": "INFY",
+    "close": 1015.4000244140624,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.497,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-29",
+    "ticker": "ITC",
+    "close": 265.1000061035156,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.492,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-29",
+    "ticker": "RELIANCE",
+    "close": 1182.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.477,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-29",
+    "ticker": "SBIN",
+    "close": 964.7000122070312,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.463,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-29",
+    "ticker": "TCS",
+    "close": 2032.4000244140625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.478,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-30",
+    "ticker": "BHARTIARTL",
+    "close": 1757.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.542,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-30",
+    "ticker": "HDFCBANK",
+    "close": 708.7000122070312,
+    "predicted_direction": "UP",
+    "probability_up": 0.538,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-30",
+    "ticker": "ICICIBANK",
+    "close": 1321.699951171875,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.416,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-30",
+    "ticker": "INFY",
+    "close": 994.0999755859376,
+    "predicted_direction": "UP",
+    "probability_up": 0.517,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-09-30",
+    "ticker": "ITC",
+    "close": 262.75,
+    "predicted_direction": "UP",
+    "probability_up": 0.528,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-30",
+    "ticker": "RELIANCE",
+    "close": 1187.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.39,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-30",
+    "ticker": "SBIN",
+    "close": 959.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.409,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-09-30",
+    "ticker": "TCS",
+    "close": 2050.60009765625,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.424,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-01",
+    "ticker": "BHARTIARTL",
+    "close": 1741.0999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.477,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-01",
+    "ticker": "HDFCBANK",
+    "close": 721.2000122070312,
+    "predicted_direction": "UP",
+    "probability_up": 0.534,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-10-01",
+    "ticker": "ICICIBANK",
+    "close": 1310.5999755859375,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.426,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-01",
+    "ticker": "INFY",
+    "close": 1035.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.494,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-10-01",
+    "ticker": "ITC",
+    "close": 255.8999938964844,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.49,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-01",
+    "ticker": "RELIANCE",
+    "close": 1167.699951171875,
+    "predicted_direction": "UP",
+    "probability_up": 0.508,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-01",
+    "ticker": "SBIN",
+    "close": 954.0999755859376,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.457,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-01",
+    "ticker": "TCS",
+    "close": 2075.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.53,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-05",
+    "ticker": "BHARTIARTL",
+    "close": 1779.9000244140625,
+    "predicted_direction": "UP",
+    "probability_up": 0.578,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-05",
+    "ticker": "HDFCBANK",
+    "close": 704.7999877929688,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.496,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-05",
+    "ticker": "ICICIBANK",
+    "close": 1332.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.585,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-05",
+    "ticker": "INFY",
+    "close": 1020.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.438,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-10-05",
+    "ticker": "ITC",
+    "close": 268.8999938964844,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.452,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-10-05",
+    "ticker": "RELIANCE",
+    "close": 1186.4000244140625,
+    "predicted_direction": "UP",
+    "probability_up": 0.516,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-05",
+    "ticker": "SBIN",
+    "close": 958.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.488,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-05",
+    "ticker": "TCS",
+    "close": 2114.39990234375,
+    "predicted_direction": "UP",
+    "probability_up": 0.543,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-10-06",
+    "ticker": "BHARTIARTL",
+    "close": 1810.5,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.478,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-06",
+    "ticker": "HDFCBANK",
+    "close": 711.4500122070312,
+    "predicted_direction": "UP",
+    "probability_up": 0.528,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-10-06",
+    "ticker": "ICICIBANK",
+    "close": 1342.800048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.523,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-06",
+    "ticker": "INFY",
+    "close": 1013.8499755859376,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.4,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-10-06",
+    "ticker": "ITC",
+    "close": 266.70001220703125,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.46,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-10-06",
+    "ticker": "RELIANCE",
+    "close": 1218.0,
+    "predicted_direction": "UP",
+    "probability_up": 0.529,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-10-06",
+    "ticker": "SBIN",
+    "close": 958.75,
+    "predicted_direction": "UP",
+    "probability_up": 0.505,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-10-06",
+    "ticker": "TCS",
+    "close": 2100.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.385,
+    "actual_direction": "DOWN"
+  },
+  {
     "date": "2026-10-07",
     "ticker": "BHARTIARTL",
     "close": 1833.9000244140625,
-    "predicted_direction": "DOWN",
-    "probability_up": 0.469,
+    "predicted_direction": "UP",
+    "probability_up": 0.503,
     "actual_direction": "DOWN"
   },
   {
@@ -12,7 +4620,7 @@
     "ticker": "HDFCBANK",
     "close": 702.75,
     "predicted_direction": "DOWN",
-    "probability_up": 0.496,
+    "probability_up": 0.48,
     "actual_direction": "DOWN"
   },
   {
@@ -20,15 +4628,15 @@
     "ticker": "ICICIBANK",
     "close": 1357.5,
     "predicted_direction": "DOWN",
-    "probability_up": 0.474,
+    "probability_up": 0.499,
     "actual_direction": "DOWN"
   },
   {
     "date": "2026-10-07",
     "ticker": "INFY",
     "close": 992.0,
-    "predicted_direction": "UP",
-    "probability_up": 0.515,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.424,
     "actual_direction": "UP"
   },
   {
@@ -36,7 +4644,7 @@
     "ticker": "ITC",
     "close": 265.70001220703125,
     "predicted_direction": "DOWN",
-    "probability_up": 0.482,
+    "probability_up": 0.415,
     "actual_direction": "DOWN"
   },
   {
@@ -44,7 +4652,7 @@
     "ticker": "RELIANCE",
     "close": 1207.699951171875,
     "predicted_direction": "DOWN",
-    "probability_up": 0.498,
+    "probability_up": 0.496,
     "actual_direction": "DOWN"
   },
   {
@@ -52,7 +4660,7 @@
     "ticker": "SBIN",
     "close": 954.0,
     "predicted_direction": "DOWN",
-    "probability_up": 0.486,
+    "probability_up": 0.387,
     "actual_direction": "DOWN"
   },
   {
@@ -60,7 +4668,135 @@
     "ticker": "TCS",
     "close": 2080.300048828125,
     "predicted_direction": "DOWN",
-    "probability_up": 0.495,
+    "probability_up": 0.452,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-10-08",
+    "ticker": "BHARTIARTL",
+    "close": 1804.5999755859373,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.437,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-08",
+    "ticker": "HDFCBANK",
+    "close": 692.25,
+    "predicted_direction": "UP",
+    "probability_up": 0.501,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-08",
+    "ticker": "ICICIBANK",
+    "close": 1349.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.478,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-08",
+    "ticker": "INFY",
+    "close": 997.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.437,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-08",
+    "ticker": "ITC",
+    "close": 255.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.428,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-08",
+    "ticker": "RELIANCE",
+    "close": 1178.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.459,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-10-08",
+    "ticker": "SBIN",
+    "close": 940.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.428,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-08",
+    "ticker": "TCS",
+    "close": 2076.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.443,
+    "actual_direction": "UP"
+  },
+  {
+    "date": "2026-10-09",
+    "ticker": "BHARTIARTL",
+    "close": 1805.0999755859373,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.459,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-10-09",
+    "ticker": "HDFCBANK",
+    "close": 707.25,
+    "predicted_direction": "UP",
+    "probability_up": 0.506,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-10-09",
+    "ticker": "ICICIBANK",
+    "close": 1355.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.433,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-10-09",
+    "ticker": "INFY",
+    "close": 1023.4000244140624,
+    "predicted_direction": "UP",
+    "probability_up": 0.547,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-10-09",
+    "ticker": "ITC",
+    "close": 266.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.404,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-10-09",
+    "ticker": "RELIANCE",
+    "close": 1170.300048828125,
+    "predicted_direction": "UP",
+    "probability_up": 0.521,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-10-09",
+    "ticker": "SBIN",
+    "close": 959.0999755859376,
+    "predicted_direction": "UP",
+    "probability_up": 0.553,
+    "actual_direction": "DOWN"
+  },
+  {
+    "date": "2026-10-09",
+    "ticker": "TCS",
+    "close": 2156.0,
+    "predicted_direction": "DOWN",
+    "probability_up": 0.49,
     "actual_direction": "DOWN"
   }
 ]
