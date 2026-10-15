@@ -1,10 +1,24 @@
 import os
 import json
 import asyncio
+from pathlib import Path
 import pandas as pd
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Query
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Dict, Any, Optional
+
+# Resolve project base directory reliably across any execution context (Render, Docker, local)
+CURRENT_FILE_DIR = Path(__file__).resolve().parent
+# When run from root: app is in src/marketpulse/api -> BASE_DIR is 3 levels up
+# Also check if cwd or parent contains data/reports for robust fallback
+if (CURRENT_FILE_DIR.parent.parent.parent / "reports").exists():
+    BASE_DIR = CURRENT_FILE_DIR.parent.parent.parent
+elif (CURRENT_FILE_DIR.parent.parent / "reports").exists():
+    BASE_DIR = CURRENT_FILE_DIR.parent.parent
+elif (Path.cwd() / "reports").exists():
+    BASE_DIR = Path.cwd()
+else:
+    BASE_DIR = CURRENT_FILE_DIR.parent.parent.parent
 
 from marketpulse.storage.mongo_client import MongoStore
 from marketpulse.graph.correlation_graph import (
@@ -65,8 +79,8 @@ def get_tickers():
 def get_prices(ticker: str = Query("RELIANCE")):
     ticker_clean = ticker.upper().replace(".NS", "")
     # Check minute data first for intraday resolution
-    min_path = os.path.join("data", "raw", "prices_minute.csv")
-    if os.path.exists(min_path):
+    min_path = BASE_DIR / "data" / "raw" / "prices_minute.csv"
+    if min_path.exists():
         try:
             df = pd.read_csv(min_path)
             g = df[df["Ticker"] == ticker_clean].tail(100)
@@ -102,8 +116,8 @@ def get_daily_prices(ticker: str):
 @app.get("/api/prices/minute/{ticker}")
 def get_minute_prices(ticker: str):
     ticker_clean = ticker.upper().replace(".NS", "")
-    min_path = os.path.join("data", "raw", "prices_minute.csv")
-    if os.path.exists(min_path):
+    min_path = BASE_DIR / "data" / "raw" / "prices_minute.csv"
+    if min_path.exists():
         df = pd.read_csv(min_path)
         g = df[df["Ticker"] == ticker_clean].tail(200)
         return g.to_dict(orient="records")
@@ -129,8 +143,8 @@ def get_news(ticker: Optional[str] = Query(None)):
     # --- Load all stored news (Mongo or JSON cache) ---
     all_news = store.get_records("news", limit=500)
     if not all_news:
-        news_path = os.path.join("data", "raw", "news_headlines.json")
-        if os.path.exists(news_path):
+        news_path = BASE_DIR / "data" / "raw" / "news_headlines.json"
+        if news_path.exists():
             try:
                 with open(news_path, "r", encoding="utf-8") as f:
                     all_news = json.load(f)
@@ -207,8 +221,8 @@ def get_news(ticker: Optional[str] = Query(None)):
 @app.get("/api/metrics")
 def get_metrics():
     """Returns real walk-forward validation results from reports/metrics.json."""
-    metrics_path = os.path.join("reports", "metrics.json")
-    if os.path.exists(metrics_path):
+    metrics_path = BASE_DIR / "reports" / "metrics.json"
+    if metrics_path.exists():
         try:
             with open(metrics_path, "r", encoding="utf-8") as f:
                 return json.load(f)
@@ -234,13 +248,13 @@ def _live_predict(ticker_clean: str) -> Optional[dict]:
     """
     today_str = pd.Timestamp.now().strftime("%Y-%m-%d")
 
-    model_path = os.path.join("data", "processed", "rf_model.joblib")
-    if not os.path.exists(model_path):
+    model_path = BASE_DIR / "data" / "processed" / "rf_model.joblib"
+    if not model_path.exists():
         return None
 
     try:
         import joblib
-        artifact = joblib.load(model_path)
+        artifact = joblib.load(str(model_path))
         if isinstance(artifact, dict):
             model = artifact.get("model")
             scaler = artifact.get("scaler")
@@ -261,8 +275,8 @@ def _live_predict(ticker_clean: str) -> Optional[dict]:
             if p.get("Ticker") == ticker_clean
         ]
     if not prices:
-        daily_path = os.path.join("data", "raw", "prices_daily.csv")
-        if os.path.exists(daily_path):
+        daily_path = BASE_DIR / "data" / "raw" / "prices_daily.csv"
+        if daily_path.exists():
             try:
                 all_df = pd.read_csv(daily_path)
                 prices = all_df[all_df["Ticker"] == ticker_clean].tail(100).to_dict(orient="records")
@@ -364,8 +378,8 @@ def get_predictions(ticker: Optional[str] = None):
 def get_correlation_graph():
     daily_returns = store.get_records("daily_returns", limit=5000)
     if not daily_returns:
-        proc_path = os.path.join("data", "processed", "daily_returns.csv")
-        if os.path.exists(proc_path):
+        proc_path = BASE_DIR / "data" / "processed" / "daily_returns.csv"
+        if proc_path.exists():
             df = pd.read_csv(proc_path)
         else:
             from marketpulse.spark_jobs.daily_returns import run_daily_returns_spark

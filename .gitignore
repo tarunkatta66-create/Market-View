@@ -34,7 +34,8 @@ reports/figures/
 
 # Data (keep raw data out of VCS)
 data/raw/
-data/processed/
+data/processed/*
+!data/processed/rf_model.joblib
 
 # Pytest cache
 .pytest_cache/
@@ -85,3 +86,7 @@ pip-wheel-metadata/
 *.onnx
 models/*.joblib
 models/*.pt
+
+# Force track production model and validation metrics
+!data/processed/rf_model.joblib
+!reports/metrics.json
