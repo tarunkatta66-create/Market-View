@@ -261,6 +261,15 @@ def _live_predict(ticker_clean: str) -> Optional[dict]:
             except Exception:
                 pass
 
+    # --- NEW FALLBACK LOGIC TO FIX "AWAITING INFERENCE" ---
+    if not prices or len(prices) < 15:
+        try:
+            from marketpulse.ingest.download_data import fetch_historical_daily
+            all_df = fetch_historical_daily()
+            prices = all_df[all_df["Ticker"] == ticker_clean].tail(100).to_dict(orient="records")
+        except Exception as e:
+            print(f"[_live_predict fallback error]: Failed to fetch prices dynamically: {e}")
+
     if not prices or len(prices) < 15:
         return None
 
