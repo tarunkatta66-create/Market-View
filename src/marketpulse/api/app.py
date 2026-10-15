@@ -225,10 +225,10 @@ def get_metrics():
 def _live_predict(ticker_clean: str) -> Optional[dict]:
     """
     Runs a real-time directional prediction for *ticker_clean* by:
-      1. Loading the persisted Random Forest model from data/processed/rf_model.joblib
+      1. Loading the persisted Random Forest model and scaler from data/processed/rf_model.joblib
       2. Fetching the most recent daily OHLCV data for the ticker
-      3. Computing the same technical-indicator features used at training time
-      4. Running model.predict_proba() on the latest feature row
+      3. Computing the same technical-indicator features (Ret1, Ret5, MA5, MA20, RSI14, Vol20, VolChange, Sentiment)
+      4. Scaling features and running model.predict_proba() on the latest feature row
 
     Returns None if the model or sufficient data is not available.
     """
@@ -240,12 +240,21 @@ def _live_predict(ticker_clean: str) -> Optional[dict]:
 
     try:
         import joblib
-        model = joblib.load(model_path)
+        artifact = joblib.load(model_path)
+        if isinstance(artifact, dict):
+            model = artifact.get("model")
+            scaler = artifact.get("scaler")
+        else:
+            model = artifact
+            scaler = None
     except Exception:
         return None
 
-    # Retrieve recent daily prices (need ~30+ rows for indicator calculation)
-    prices = store.get_records("historical_prices", query={"Ticker": ticker_clean}, limit=60)
+    if model is None:
+        return None
+
+    # Retrieve recent daily prices (need ~30+ rows for 20-day MA & Volatility calculation)
+    prices = store.get_records("historical_prices", query={"Ticker": ticker_clean}, limit=100)
     if not prices:
         prices = [
             p for p in store.get_records("historical_prices", limit=5000)
@@ -256,39 +265,56 @@ def _live_predict(ticker_clean: str) -> Optional[dict]:
         if os.path.exists(daily_path):
             try:
                 all_df = pd.read_csv(daily_path)
-                prices = all_df[all_df["Ticker"] == ticker_clean].tail(60).to_dict(orient="records")
+                prices = all_df[all_df["Ticker"] == ticker_clean].tail(100).to_dict(orient="records")
             except Exception:
                 pass
 
-    if not prices or len(prices) < 10:
+    if not prices or len(prices) < 15:
         return None
 
     df = pd.DataFrame(prices).sort_values("Date")
     df["Close"] = pd.to_numeric(df["Close"], errors="coerce")
+    df["Volume"] = pd.to_numeric(df["Volume"], errors="coerce").fillna(0.0)
     df = df.dropna(subset=["Close"])
 
-    from marketpulse.features.technical_indicators import compute_indicators
-    try:
-        feat_df = compute_indicators(df)
-    except Exception:
-        return None
-
-    feat_df = feat_df.dropna()
-    if feat_df.empty:
-        return None
-
-    feature_cols = [
-        c for c in feat_df.columns
-        if c not in ["Date", "Ticker", "Open", "High", "Low", "Close", "Volume", "Target"]
-    ]
+    from marketpulse.features.technical_indicators import build_technical_features
+    from marketpulse.models.train import FEATURE_COLS
 
     try:
-        X_latest = feat_df[feature_cols].iloc[[-1]].values
+        # build_technical_features expects Date, Ticker, Close, Volume
+        feat_df = build_technical_features(df)
+        if feat_df.empty:
+            # If shift(-1) dropped all rows or not enough history, compute features on df without shift
+            feat_df = df.copy()
+            feat_df["Ret1"] = feat_df["Close"].pct_change().fillna(0.0)
+            feat_df["Ret5"] = feat_df["Close"].pct_change(5).fillna(0.0)
+            feat_df["MA5"] = (feat_df["Close"].rolling(5).mean() / feat_df["Close"] - 1.0).fillna(0.0)
+            feat_df["MA20"] = (feat_df["Close"].rolling(20).mean() / feat_df["Close"] - 1.0).fillna(0.0)
+            from marketpulse.features.technical_indicators import compute_rsi
+            feat_df["RSI14"] = compute_rsi(feat_df["Close"], 14)
+            feat_df["Vol20"] = feat_df["Ret1"].rolling(20).std().fillna(0.0)
+            feat_df["VolChange"] = feat_df["Volume"].pct_change().fillna(0.0)
+
+        # Merge sentiment score if available
+        news_docs = store.get_records("news", limit=200)
+        sentiment_score = 0.0
+        if news_docs:
+            for n in news_docs:
+                if n.get("ticker", "").upper().replace(".NS", "") == ticker_clean:
+                    sentiment_score += float(n.get("sentiment_score", 0.0))
+        feat_df["Sentiment"] = sentiment_score
+
+        # Prepare X row
+        X_latest = feat_df[FEATURE_COLS].iloc[[-1]].values
+        if scaler is not None:
+            X_latest = scaler.transform(X_latest)
+
         prob = model.predict_proba(X_latest)[0]
         class_labels = list(model.classes_)
         prob_up = float(prob[class_labels.index(1)]) if 1 in class_labels else float(prob[-1])
         direction = "UP" if prob_up >= 0.5 else "DOWN"
-    except Exception:
+    except Exception as e:
+        print(f"[_live_predict error for {ticker_clean}]: {e}")
         return None
 
     return {
@@ -306,26 +332,31 @@ def get_predictions(ticker: Optional[str] = None):
     ticker_clean = ticker.upper().replace(".NS", "") if ticker else None
 
     # 1. Stored predictions from MongoDB (produced by train.py walk-forward validation)
-    preds = store.get_records("predictions", limit=200)
+    preds = store.get_records("predictions", limit=500)
+    filtered = []
     if preds and ticker_clean:
         filtered = [
             p for p in preds
             if p.get("ticker", "").upper().replace(".NS", "") == ticker_clean
         ]
-        if filtered:
-            return filtered
 
-    # 2. Live inference from the persisted RF model (runs on the fly)
-    if ticker_clean:
-        live = _live_predict(ticker_clean)
+    # 2. Compute latest live inference from the persisted RF model
+    live = _live_predict(ticker_clean) if ticker_clean else None
+
+    if filtered:
         if live:
-            return [live]
+            # Append today's live prediction if not already in filtered records
+            if not any(p.get("date") == live.get("date") for p in filtered):
+                filtered.append(live)
+        return filtered
 
-    # 3. Return unfiltered stored predictions (any ticker) as an interim fallback
+    if live:
+        return [live]
+
+    # 3. Return unfiltered stored predictions as fallback
     if preds:
-        return preds[:10]
+        return preds[:20]
 
-    # 4. Nothing available — let the frontend display "No prediction available"
     return []
 
 

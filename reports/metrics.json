@@ -14,10 +14,10 @@
     "roc_auc": 0.5144
   },
   "lstm": {
-    "accuracy": 0.5308,
-    "precision": 0.4683,
-    "recall": 0.1745,
-    "f1": 0.2543,
-    "roc_auc": 0.5012
+    "accuracy": 0.545,
+    "precision": 0.6429,
+    "recall": 0.0164,
+    "f1": 0.0319,
+    "roc_auc": 0.5098
   }
 }
