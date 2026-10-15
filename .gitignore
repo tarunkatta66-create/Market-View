@@ -90,3 +90,6 @@ models/*.pt
 # Force track production model and validation metrics
 !data/processed/rf_model.joblib
 !reports/metrics.json
+!data/processed/daily_returns.csv
+!data/raw/prices_daily.csv
+!data/raw/prices_minute.csv
