@@ -129,15 +129,6 @@ def get_minute_prices(ticker: str):
 
 @app.get("/api/news")
 def get_news(ticker: Optional[str] = Query(None)):
-    """
-    Returns news filtered by ticker when ?ticker= is provided.
-
-    Priority order:
-      1. MongoDB 'news' collection, filtered to this ticker + generic MARKET items
-      2. Cached news_headlines.json, filtered the same way
-      3. Live Google News RSS fetch for the specific ticker (scored on-the-fly)
-      4. Unfiltered stored news (generic market news) as a last resort
-    """
     ticker_clean = ticker.upper().replace(".NS", "") if ticker else None
 
     # --- Load all stored news (Mongo or JSON cache) ---
@@ -152,7 +143,6 @@ def get_news(ticker: Optional[str] = Query(None)):
                 all_news = []
 
     if ticker_clean and all_news:
-        # Return items specifically tagged to this ticker OR generic MARKET items
         filtered = [
             n for n in all_news
             if (n.get("ticker", "").upper().replace(".NS", "") == ticker_clean
@@ -220,7 +210,6 @@ def get_news(ticker: Optional[str] = Query(None)):
 
 @app.get("/api/metrics")
 def get_metrics():
-    """Returns real walk-forward validation results from reports/metrics.json."""
     metrics_path = BASE_DIR / "reports" / "metrics.json"
     if metrics_path.exists():
         try:
@@ -228,7 +217,6 @@ def get_metrics():
                 return json.load(f)
         except Exception:
             pass
-    # Emergency cold-start fallback — real metrics are always written by train.py
     return {
         "logistic_regression": {"accuracy": 0.53, "precision": 0.52, "recall": 0.54, "f1": 0.53, "roc_auc": 0.53},
         "random_forest": {"accuracy": 0.55, "precision": 0.54, "recall": 0.56, "f1": 0.55, "roc_auc": 0.55},
@@ -237,15 +225,6 @@ def get_metrics():
 
 
 def _live_predict(ticker_clean: str) -> Optional[dict]:
-    """
-    Runs a real-time directional prediction for *ticker_clean* by:
-      1. Loading the persisted Random Forest model and scaler from data/processed/rf_model.joblib
-      2. Fetching the most recent daily OHLCV data for the ticker
-      3. Computing the same technical-indicator features (Ret1, Ret5, MA5, MA20, RSI14, Vol20, VolChange, Sentiment)
-      4. Scaling features and running model.predict_proba() on the latest feature row
-
-    Returns None if the model or sufficient data is not available.
-    """
     today_str = pd.Timestamp.now().strftime("%Y-%m-%d")
 
     model_path = BASE_DIR / "data" / "processed" / "rf_model.joblib"
@@ -267,7 +246,6 @@ def _live_predict(ticker_clean: str) -> Optional[dict]:
     if model is None:
         return None
 
-    # Retrieve recent daily prices (need ~30+ rows for 20-day MA & Volatility calculation)
     prices = store.get_records("historical_prices", query={"Ticker": ticker_clean}, limit=100)
     if not prices:
         prices = [
@@ -291,25 +269,26 @@ def _live_predict(ticker_clean: str) -> Optional[dict]:
     df["Volume"] = pd.to_numeric(df["Volume"], errors="coerce").fillna(0.0)
     df = df.dropna(subset=["Close"])
 
-    from marketpulse.features.technical_indicators import build_technical_features
-    from marketpulse.models.train import FEATURE_COLS
-
     try:
-        # build_technical_features expects Date, Ticker, Close, Volume
-        feat_df = build_technical_features(df)
-        if feat_df.empty:
-            # If shift(-1) dropped all rows or not enough history, compute features on df without shift
-            feat_df = df.copy()
-            feat_df["Ret1"] = feat_df["Close"].pct_change().fillna(0.0)
-            feat_df["Ret5"] = feat_df["Close"].pct_change(5).fillna(0.0)
-            feat_df["MA5"] = (feat_df["Close"].rolling(5).mean() / feat_df["Close"] - 1.0).fillna(0.0)
-            feat_df["MA20"] = (feat_df["Close"].rolling(20).mean() / feat_df["Close"] - 1.0).fillna(0.0)
-            from marketpulse.features.technical_indicators import compute_rsi
-            feat_df["RSI14"] = compute_rsi(feat_df["Close"], 14)
-            feat_df["Vol20"] = feat_df["Ret1"].rolling(20).std().fillna(0.0)
-            feat_df["VolChange"] = feat_df["Volume"].pct_change().fillna(0.0)
+        # Avoid relying on local files / training imports completely to prevent FileNotFoundError
+        # Calculate features directly on the live DF in real-time
+        feat_df = df.copy()
+        feat_df["Ret1"] = feat_df["Close"].pct_change().fillna(0.0)
+        feat_df["Ret5"] = feat_df["Close"].pct_change(5).fillna(0.0)
+        feat_df["MA5"] = (feat_df["Close"].rolling(5).mean() / feat_df["Close"] - 1.0).fillna(0.0)
+        feat_df["MA20"] = (feat_df["Close"].rolling(20).mean() / feat_df["Close"] - 1.0).fillna(0.0)
+        
+        # Simple RSI 14 calculation inline to avoid missing modules
+        delta = feat_df["Close"].diff()
+        gain = (delta.where(delta > 0, 0)).rolling(window=14).mean()
+        loss = (-delta.where(delta < 0, 0)).rolling(window=14).mean()
+        rs = gain / loss
+        feat_df["RSI14"] = 100 - (100 / (1 + rs))
+        feat_df["RSI14"] = feat_df["RSI14"].fillna(50.0)
+        
+        feat_df["Vol20"] = feat_df["Ret1"].rolling(20).std().fillna(0.0)
+        feat_df["VolChange"] = feat_df["Volume"].pct_change().fillna(0.0)
 
-        # Merge sentiment score if available
         news_docs = store.get_records("news", limit=200)
         sentiment_score = 0.0
         if news_docs:
@@ -318,8 +297,10 @@ def _live_predict(ticker_clean: str) -> Optional[dict]:
                     sentiment_score += float(n.get("sentiment_score", 0.0))
         feat_df["Sentiment"] = sentiment_score
 
-        # Prepare X row
+        # Order must exactly match model training
+        FEATURE_COLS = ["Ret1", "Ret5", "MA5", "MA20", "RSI14", "Vol20", "VolChange", "Sentiment"]
         X_latest = feat_df[FEATURE_COLS].iloc[[-1]].values
+        
         if scaler is not None:
             X_latest = scaler.transform(X_latest)
 
@@ -327,8 +308,11 @@ def _live_predict(ticker_clean: str) -> Optional[dict]:
         class_labels = list(model.classes_)
         prob_up = float(prob[class_labels.index(1)]) if 1 in class_labels else float(prob[-1])
         direction = "UP" if prob_up >= 0.5 else "DOWN"
+        
     except Exception as e:
-        print(f"[_live_predict error for {ticker_clean}]: {e}")
+        print(f"[_live_predict ERROR]: Failed calculating features for {ticker_clean}: {e}")
+        import traceback
+        traceback.print_exc()
         return None
 
     return {
@@ -355,7 +339,13 @@ def get_predictions(ticker: Optional[str] = None):
         ]
 
     # 2. Compute latest live inference from the persisted RF model
-    live = _live_predict(ticker_clean) if ticker_clean else None
+    try:
+        live = _live_predict(ticker_clean) if ticker_clean else None
+    except Exception as e:
+        print(f"[/api/predictions ERROR] Live prediction failed: {e}")
+        import traceback
+        traceback.print_exc()
+        live = None
 
     if filtered:
         if live:
