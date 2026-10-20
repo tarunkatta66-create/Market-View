@@ -12,7 +12,7 @@ export default function Header({ isLive = false }) {
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-bold text-slate-900 text-lg tracking-tight">MarketPulse</span>
+              <span className="font-bold text-slate-900 text-lg tracking-tight">Market-View</span>
               <span className="bg-slate-100 text-slate-600 border border-slate-200 text-[10px] font-semibold px-2 py-0.5 rounded-full uppercase">
                 Terminal
               </span>
